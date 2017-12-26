@@ -131,3 +131,4 @@ If you’re observant, you’ll also notice these disadvantages:
 2. Execution begins immediately when the Promise is created.
 3. Possible performance issues. Due to the runtime overhead of monitoring the state of a Promise, they are slower than callbacks (although this might improve as more JS engines start supporting them natively).
 4. Not available on all JS engines. In older engines, they have to be polyfilled.
+![pic](http://i.imgur.com/MByWioX.png)

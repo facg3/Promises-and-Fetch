@@ -110,7 +110,6 @@ fetch(request)
 });
 ```
 ## what are the downsides of using Fetch?
-- you don’t get anything unless you ask for it
 - doesn’t send cookies by default if the server uses cookie based authentication
 - the server needs to know that the client will be able to handle a JSON encoded response
 - the server in on a different sub-domain and CROS* is disabled by default in fetch

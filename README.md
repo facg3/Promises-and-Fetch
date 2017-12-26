@@ -87,7 +87,7 @@ fetch(path , init)
 A descritpive explaination for the options is found [here](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request)
 
 ## fetch error handling
-responses in fetch have a property ```js ok ``` that describe the state of the response, wheather if it was successful or not. 
+responses in fetch have a property ```ok ``` that describe the state of the response, wheather if it was successful or not. 
 
 ### Syntax eg.
 ```js

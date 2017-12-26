@@ -52,9 +52,9 @@ function isUserTooYoung(id) {
 ```
 
 ## What are fetches
-A fetch is a request - Similar to the XHTTPRequest - that takes in:
-. path: path to file wishing to be read
-. init: an argument that allows you to control a bunch of things *(optional)*
+A fetch is a request -Similar to the XHTTPRequest- that takes in:
+- path: path to file wishing to be read
+- init: an argument that allows you to control a bunch of things *(optional)*
 
 and returns a promise with the response
 

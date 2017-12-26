@@ -115,3 +115,19 @@ fetch(request)
 - the server in on a different sub-domain and CROS* is disabled by default in fetch
 - fetch doesn’t give any mechanism to override defaults
 - ```response.json()``` will throw an exception if the server responded with 204 (sucsess, no content)
+
+#### Advantages of Promises
+
+1. Flat structure
+2. Terse error handling
+3. Point-free syntax (where possible)
+4. Compositional pipeline of functions
+5. Can use throw
+If you’re observant, you’ll also notice these disadvantages:
+
+#### Disadvantages of Promises
+
+1. Can only operate on a single value at a time (Arrays and/or Promise.all helps you work around this, though)
+2. Execution begins immediately when the Promise is created.
+3. Possible performance issues. Due to the runtime overhead of monitoring the state of a Promise, they are slower than callbacks (although this might improve as more JS engines start supporting them natively).
+4. Not available on all JS engines. In older engines, they have to be polyfilled.

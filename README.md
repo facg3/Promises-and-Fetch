@@ -109,3 +109,10 @@ fetch(request)
   console.log(err);   // imagine this as error handling
 });
 ```
+## what are the downsides of using Fetch?
+- you don’t get anything unless you ask for it
+- doesn’t send cookies by default if the server uses cookie based authentication
+- the server needs to know that the client will be able to handle a JSON encoded response
+- the server in on a different sub-domain and CROS* is disabled by default in fetch
+- fetch doesn’t give any mechanism to override defaults
+- ```response.json()``` will throw an exception if the server responded with 204 (sucsess, no content)
